@@ -2,12 +2,30 @@
 *{
     box-sizing: border-box;
 }
+html{
+    font-size: 10px;
+}
 .navbar-btn{
     background-color: #E76F51;
+    color: white;
+    
 }
 .header-bg{
-   background: #264653;    
+   background: #264653;
+   color:white;    
 }
+h1{
+    font-size: 4.8rem;
+    font-weight: 600;
+}
+h2{
+    font-size: 3.8rem;
+    font-weight: 600;
+}
+
+.img-honda {
+    filter: grayscale(100%);
+  }
 
 
 
