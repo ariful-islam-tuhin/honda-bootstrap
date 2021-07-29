@@ -16,14 +16,14 @@
     <body> 
         <header class="w-100% p-100px header-bg">            
                 <section class="container">
-                    <nav class="navbar navbar-expand-sm navbar-dark" >                        
+                    <nav class="navbar navbar-expand-sm fixed top navbar-dark" >                        
                           <!-- this button copy from component -->
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button>
                         <!-- this div copy from button er nicher div and ul stay in this div-->
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav fixed top fs-2 ms-auto mt-4">
+                        <ul class="navbar-nav  fs-2 ms-auto mt-4">
                           <li class="nav-item ms-5"><a class="nav-link active" href="#">Home</a></li>
                           <li class="nav-item ms-5"><a class="nav-link" href="#">Shop</a></li>
                           <li class="nav-item ms-5"><a class="nav-link" href="#">News</a></li>
@@ -40,7 +40,33 @@
                                 dolor do amet sint. Velit officia consequat duis enim velit
                                 mollit. Exercitation veniam consequat sunt nostrud amet
                             </p>
-                            <button class="btn fs-2 navbar-btn px-3 w-25">Purchase</button>
+                         <!-- <button class="btn fs-2 navbar-btn px-3 w-25">Purchase</button> -->
+                            <!-- =======-- moddal code here--========= -->
+                          
+                            <button type="button" class="btn fs-2 navbar-btn px-3 w-25" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Purchase
+                            </button>
+                            
+                           
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Lorem ipsum dolor sit amet.</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div style="color: rgb(0, 0, 0);" class="modal-body fs-2">
+                                       <h3> 10 Things to Avoid When Buying a New Bike</h3>
+                                       <p class="fs-4">You don’t know how a bike truly fits or handles until you’ve hopped in the saddle and taken it for a test spin. Try to do more than a simple pedal around the parking lot; some local bike dealers have demo bikes you can rent or borrow, and many bike manufacturers offer free demo days at shops and parks throughout the year. Talk to a salesperson to learn about your options.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button style="color:rgb(255, 255, 255);" type="button" class="btn btn-secondary fs-2" data-bs-dismiss="modal">Close</button>
+                                    <button style="color:rgb(0, 0, 0);" type="button" class="btn btn-primary fs-2">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- ====== modal code here  =========== -->
                         </div>
             
                         <div class="col-lg-6 ms-auto">
@@ -74,7 +100,7 @@
               </div> 
     <!-- Future bike section end here -->
     <!-- Latest news section start here  -->
-    <div class="Latest-news-section mt-5 pt-5 ">
+    <div class="Latest-news-section mt-5 pt-5 pb-5 letest-news-bg ">
         <div class="title text-center mb-3 pb-5 mt-4">
           <h2>latest News</h2>
         </div>
@@ -122,8 +148,8 @@
     <!-- Latest news section end here  -->
     
     <!-- happy client section -->
-    <div class="happy-clint-section text-center mt-5 pt-5">
-        <h2 class="mb-5 mt-4"> Happy <span style="color:#E76F51">Clients says</span> </h2>
+    <div class="happy-clint-section text-center mt-5 pt-5 Happy-clint-bg">
+        <h2 class="mb-5 mt-4"><span style="color: white;">Happy</span>  <span style="color:#E76F51">Clients says</span> </h2>
         <div class="row mt-4">
             <div class="col-lg-4 p-4">
               <div class="card">
@@ -190,15 +216,15 @@
             </div>                
          </div>
     </div>
-    <!--====== Frequently Asked Questions  ========= -->
-    <div class="Frequently-Section">
-        <h2 class="text-center my-5 py-5">Frequently Asked Questions</h2>
-        <div class="row">
+    <!--====== Frequently Asked Questions start ========= -->
+    <div class="Frequently-Section frequently-bg">
+        <h2 class="text-center my-5 py-5">Frequently Asked <span style="color:#E76F51;"> Questions </span> </h2>
+        <div class="row d-flex align-items-center">
             <div class="col-lg-6">
-                <img class="w-100" src="image/faq.png" alt="image">
+                <img class="w-100 p-5" src="image/faq.png" alt="image">
             </div>
 
-            <div class="col-lg-6 fs-3">
+            <div class="col-lg-6 fs-3">   
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingOne">
@@ -238,12 +264,101 @@
                     </div>
                   </div>
             </div>
-        </div>
-         
+        </div>      
         
     </div>
 
-    <!--====== Frequently Asked Questions  ========= -->
+    <!--====== Frequently Asked Questions end  ========= -->
+    <!-- ======extra Div start here ==================== -->
+    <div class=" bike-name-section-bg p-4">
+        <div class="title text-center mb-3">
+          <h2 class="font-weight-bolder py-5 "> <span style="color: #E76F51;">Visit and Chose you bike</span>  </h2>
+        </div>
+        <div class="row ">
+          <div class="col-lg-3">
+            <div class="card">             
+              <div class="card-body text-center"> 
+                <h4 class="card-title">Thunderbolt (BSA) </h4>
+                <p class="card-text fs-4"> Click the card and chose your favourite bike to thes website </p>
+                <a class="card-link stretched-link fs-4" target="blank" href="https://www.webbikeworld.com/motorcycle-brands/all-brands/"> visit this link </a> 
+              </div>
+              <img class="card-img-bottom" src="image/bike-2.png" alt="card">
+             
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">             
+              <div class="card-body text-center "> 
+                <h4 class="card-title"> Venom (Velocette)</h4>
+                <p class="card-text fs-4"> Click the card and chose your favourite bike to thes website .</p>
+                <a class="card-link stretched-link fs-4" target="blank" href="https://www.youtube.com/watch?v=IqU4XjL2K2o">visit this link</a>
+              </div>
+              <img class="card-img-bottom" src="image/bike-1.png" alt="card">
+             
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+             
+              <div class="card-body text-center"> 
+                <h4 class="card-title"> Sports Bike  </h4>
+                <p class="card-text fs-4"> Click the card and chose your favourite bike to thes website .</p>
+                <a class="card-link stretched-link fs-4" target="blank" href="https://www.youtube.com/watch?v=Ck7iva4FXzg">visit this link</a>
+              </div>
+              <img class="card-img-bottom" src="image/bike-2.png" alt="card">
+             
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+             
+              <div class="card-body text-center"> 
+                <h4 class="card-title"> all kind of bike </h4>
+                <p class="card-text fs-4"> Click the card and chose your favourite bike to thes website .</p>
+                <a class="card-link stretched-link fs-4" target="blank" href="https://www.bikebd.com/">visit this link</a>
+              </div>
+              <img class="card-img-bottom" src="image/bike-1.png" alt="card">
+             
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    <!--=== extra div end here ===-->
+    <!-- === another extra div start here == -->
+    <div class="contuct-section text-white contuct-bg pt-5">
+        <div class="title my-3 font-weight-bolder text-center p-3">
+          <h3>Contuct With Us </h3>
+        </div>
+        <form action="" class="w-50 m-auto was-validated fs-4">
+            <div class="form-group">
+                <label for="fullname">fullname</label>
+                <input type="text" class="form-control" name="fullname" required>
+                <div class="valid-feedback">valid</div>
+                <div class="invalid-feedback">please enter your full name</div>
+            </div>
+            <div class="form-group">
+                <label for="email">email</label>
+                <input type="email" class="form-control" name="email">
+            </div>
+            <div class="form-group">
+                <label for="subject">subject</label>
+                <input type="text" class="form-control" name="subject">
+            </div>
+            <div class="form-group">
+                <label for="massage">massage</label>
+                <textarea style="resize:none;" name="massage"class="form-control" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-group d-flex pb-5">
+                <input type="submit" class="btn btn-bg w-25 me-3 fs-4" value="submit">
+                <input type="reset"class="btn btn-bg w-75 fs-4" value="reset">
+            </div>        
+        </form>
+      </div>
+    <!-- === another extra div end here == -->
+
+        
     
    
    

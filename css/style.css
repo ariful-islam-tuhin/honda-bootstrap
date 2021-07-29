@@ -26,6 +26,12 @@ h3{
     font-size: 3rem;
     font-weight: 600;
 }
+h4{
+    font-size: 2rem;
+    font-weight: 700;
+    color:#E76F51;
+
+}
 
 
 .img-honda {
@@ -35,7 +41,16 @@ h3{
     background-color: #E76F51;
     color: white; 
   }
+  .letest-news-bg{
+      background-color: #A2DBFA;
+  }
   /* ============= */
+  .Happy-clint-bg{
+      background-color: #053742;
+  }
+  .frequently-bg{
+      background-color: #e9fbff;
+  }
  
   /* ================= */
 
@@ -43,6 +58,16 @@ h3{
     color: #E76F51;
     text-align: center;
      
+  }
+  /* =============== */
+  .bike-name-section-bg{
+      background-color: #171717;
+  }
+  .contuct-bg{
+      background-color: #444444;
+  }
+  .btn-bg{
+      background-color: #E76F51;
   }
 
 
