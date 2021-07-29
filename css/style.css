@@ -59,6 +59,9 @@ h4{
     text-align: center;
      
   }
+  .image-height{
+      height:250px;
+  }
   /* =============== */
   .bike-name-section-bg{
       background-color: #171717;
@@ -69,7 +72,30 @@ h4{
   .btn-bg{
       background-color: #E76F51;
   }
-
+/* fotter starts here  */
+.fotter{
+    padding: 1% 10%;
+    background: black;
+}
+.fotter a{
+    color: white;
+    padding: 0px 5px;
+}
+.fotter a:hover{
+    color: rgba(28, 245, 136, 0.787);
+}
+@media(max-width:768px){
+    .nav-link{
+        background: rgba(0, 0, 0, 0.486);
+        margin: 1px;
+        border-radius:5px;
+    }
+   
+    .nav-link:hover{
+        background:rgba(0, 0, 0, 0.781) ;       
+    }
+}
+/* fotter ends here  */
 
 
 
