@@ -19,14 +19,29 @@ h1{
     font-weight: 600;
 }
 h2{
-    font-size: 3.8rem;
+    font-size: 4rem;
     font-weight: 600;
 }
+h3{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
 
 .img-honda {
     filter: grayscale(100%);
   }
+  .Latest-news-btn{
+    background-color: #E76F51;
+    color: white; 
+  }
+  /* ================= */
 
+  .star-bg{
+    color: #E76F51;
+    text-align: center;
+     
+  }
 
 
 
